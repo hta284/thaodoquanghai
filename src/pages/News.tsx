@@ -6,7 +6,7 @@ const NEWS = [
     id: 1,
     title: 'Kinh nghiệm tháo dỡ nhà cũ an toàn, tiết kiệm',
     excerpt: 'Tháo dỡ nhà cũ là công đoạn đầu tiên và vô cùng quan trọng trước khi xây dựng công trình mới. Bài viết này sẽ chia sẻ những kinh nghiệm thực tế...',
-    img: 'https://images.unsplash.com/photo-1518182170546-076616fdfaaf?auto=format&fit=crop&q=80&w=800',
+    img: '/tin-tuc-1.jpg',
     date: '15/10/2023',
     author: 'Quản trị viên'
   },
@@ -14,15 +14,15 @@ const NEWS = [
     id: 2,
     title: 'Lưu ý khi chọn dịch vụ san lấp mặt bằng tại TP.HCM',
     excerpt: 'Làm sao để chọn được đơn vị san lấp mặt bằng uy tín, chất lượng đất cát đảm bảo và giá cả hợp lý? Hãy cùng tìm hiểu qua bài viết dưới đây...',
-    img: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800',
+    img: '/tin-tuc-2.jpg',
     date: '02/11/2023',
     author: 'Quản trị viên'
   },
   {
     id: 3,
-    title: 'Báo giá đục phá bê tông mới nhất năm nay',
-    excerpt: 'Cập nhật bảng báo giá dịch vụ khoan cắt, đục phá bê tông chi tiết cho từng hạng mục công trình. Cam kết không phát sinh chi phí...',
-    img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800',
+    title: 'Chi phí đục phá bê tông mới nhất năm nay',
+    excerpt: 'Cập nhật bảng chi phí dịch vụ khoan cắt, đục phá bê tông tham khảo cho từng hạng mục công trình. Cam kết không phát sinh...',
+    img: '/tin-tuc-3.jpg',
     date: '20/11/2023',
     author: 'Quản trị viên'
   }
@@ -82,7 +82,7 @@ export default function News() {
                   Chuyên mục
                 </h3>
                 <ul className="space-y-2">
-                  {['Kinh nghiệm thi công', 'Báo giá dịch vụ', 'Tin tức công ty', 'Kiến thức xây dựng'].map((cat, i) => (
+                  {['Kinh nghiệm thi công', 'Chi phí tham khảo', 'Tin tức công ty', 'Kiến thức xây dựng'].map((cat, i) => (
                     <li key={i}>
                       <a href="#" className="flex justify-between items-center text-gray-600 hover:text-secondary transition-colors py-2 border-b border-gray-50 last:border-0">
                         <span>{cat}</span>

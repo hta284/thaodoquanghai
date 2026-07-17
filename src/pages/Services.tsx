@@ -8,7 +8,7 @@ const SERVICES = [
     id: 'thao-do-nha',
     title: "Tháo dỡ nhà", 
     desc: "Thi công tháo dỡ nhà xưởng, công trình dân dụng cũ an toàn, dọn dẹp sạch sẽ mặt bằng.", 
-    img: "https://images.unsplash.com/photo-1518182170546-076616fdfaaf?auto=format&fit=crop&q=80&w=800", 
+    img: "/thao-do-nha.jpg", 
     icon: Wrench,
     features: ["Biện pháp thi công an toàn", "Dọn dẹp sạch xà bần", "Bảo vệ các công trình lân cận"]
   },
@@ -16,7 +16,7 @@ const SERVICES = [
     id: 'dao-mong',
     title: "Đào móng", 
     desc: "Đào móng nhà, tầng hầm, hố ga chuyên nghiệp với hệ thống xe cuốc đa kích cỡ.", 
-    img: "https://images.unsplash.com/photo-1574320297050-62136e053fa8?auto=format&fit=crop&q=80&w=800", 
+    img: "/san-lap-mat-bang.jpg", 
     icon: Pickaxe,
     features: ["Máy móc đa dạng, vào được hẻm nhỏ", "Đào chuẩn kích thước bản vẽ", "Đội ngũ kỹ thuật giám sát"]
   },
@@ -24,7 +24,7 @@ const SERVICES = [
     id: 'san-lap-mat-bang',
     title: "San lấp mặt bằng", 
     desc: "Cung cấp vật tư và thi công san lấp mặt bằng công trình, đất nền, khu công nghiệp.", 
-    img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800", 
+    img: "/dao-mong-dong-cu.jpg", 
     icon: MapPin,
     features: ["Cung cấp đất, cát san lấp giá rẻ", "Lu lèn đạt chuẩn độ chặt K", "Mặt bằng phẳng, thoát nước tốt"]
   },
@@ -32,7 +32,7 @@ const SERVICES = [
     id: 'ep-cu',
     title: "Đóng cừ, Ép cừ", 
     desc: "Thi công ép cừ U, cừ larsen chống sạt lở cho các công trình có tầng hầm, ven sông.", 
-    img: "https://images.unsplash.com/photo-1541888081622-19e525656157?auto=format&fit=crop&q=80&w=800", 
+    img: "/ep-cu.jpg", 
     icon: Building2,
     features: ["Ép cừ bằng máy thủy lực êm ái", "Bảo vệ móng nhà lân cận", "Bản vẽ biện pháp thi công chi tiết"]
   },
@@ -40,7 +40,7 @@ const SERVICES = [
     id: 'duc-nen-be-tong',
     title: "Đục phá bê tông", 
     desc: "Khoan cắt, đục phá bê tông nền, tường, cột bằng máy móc hiện đại, ít tiếng ồn.", 
-    img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800", 
+    img: "/duc-pha-nen.jpg", 
     icon: HardHat,
     features: ["Máy đục hơi, đục điện công suất lớn", "Khoan rút lõi bê tông", "Cắt rãnh, cắt sàn bê tông"]
   },
@@ -48,7 +48,7 @@ const SERVICES = [
     id: 'cho-xa-ban',
     title: "Chở xà bần", 
     desc: "Thu gom, dọn dẹp và vận chuyển xà bần, rác thải xây dựng bằng xe ben từ 1 - 15 khối.", 
-    img: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800", 
+    img: "/cho-xa-ban.jpg", 
     icon: Truck,
     features: ["Xe tải đủ tải trọng", "Vào hẻm nội thành", "Bãi đổ rác đúng quy định"]
   },
@@ -110,7 +110,7 @@ export default function Services() {
                     to="/lien-he"
                     className="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-primary-dark text-white rounded-full font-bold transition-all shadow-md"
                   >
-                    Nhận báo giá ngay <ArrowRight size={18} />
+                    Liên hệ ngay <ArrowRight size={18} />
                   </Link>
                 </div>
               </motion.div>

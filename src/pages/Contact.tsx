@@ -40,45 +40,49 @@ export default function Contact() {
             <div>
               <h2 className="text-3xl font-bold mb-8 text-primary">Thông Tin Trực Tiếp</h2>
               
-              <div className="space-y-6 mb-10">
-                <div className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-12 h-12 bg-orange-50 text-secondary rounded-full flex items-center justify-center shrink-0">
-                    <MapPin size={24} />
+              <div className="space-y-4 mb-10">
+                <div className="flex items-start gap-4 p-5 bg-white shadow-sm border border-gray-100">
+                  <div className="w-10 h-10 bg-red-50 text-secondary flex items-center justify-center shrink-0">
+                    <MapPin size={20} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Trụ Sở Văn Phòng</h3>
-                    <p className="text-gray-600">Thành phố Hồ Chí Minh (Phục vụ 24 quận huyện và các tỉnh lân cận)</p>
+                    <h3 className="font-bold text-lg mb-1">CÔNG TY QUANG HẢI</h3>
+                    <p className="text-gray-600 mb-1">Người đại diện: Nguyễn Văn Hải</p>
+                    <p className="text-gray-600 mb-1">MST: 0318264614</p>
+                    <p className="text-gray-600">Địa chỉ: 109/5/13 Đ. Thạnh Xuân 22, Thới An, Hồ Chí Minh 70000, Việt Nam</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-12 h-12 bg-orange-50 text-secondary rounded-full flex items-center justify-center shrink-0">
-                    <Phone size={24} />
+                <div className="flex items-start gap-4 p-5 bg-white shadow-sm border border-gray-100">
+                  <div className="w-10 h-10 bg-red-50 text-secondary flex items-center justify-center shrink-0">
+                    <Phone size={20} />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Điện Thoại / Zalo</h3>
-                    <a href="tel:0972833227" className="text-2xl font-black text-primary hover:text-secondary transition-colors">0972 833 227</a>
-                    <p className="text-gray-500 text-sm mt-1">Mr. Hải - Tư vấn kỹ thuật 24/7</p>
+                    <div className="flex flex-col gap-1 mt-2">
+                      <a href="tel:0972833227" className="text-2xl font-black text-primary hover:text-secondary transition-colors">SĐT: 0972 833 227</a>
+                      <a href="https://zalo.me/0985023531" target="_blank" rel="noreferrer" className="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors">Zalo: 0985023531</a>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-12 h-12 bg-orange-50 text-secondary rounded-full flex items-center justify-center shrink-0">
-                    <Mail size={24} />
+                <div className="flex items-start gap-4 p-5 bg-white shadow-sm border border-gray-100">
+                  <div className="w-10 h-10 bg-red-50 text-secondary flex items-center justify-center shrink-0">
+                    <Mail size={20} />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Email</h3>
-                    <a href="mailto:contact@quanghai.vn" className="text-gray-600 hover:text-secondary transition-colors">contact@quanghai.vn</a>
+                    <a href="mailto:thaodoquanghai@gmail.com" className="text-gray-600 hover:text-secondary transition-colors">thaodoquanghai@gmail.com</a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-12 h-12 bg-orange-50 text-secondary rounded-full flex items-center justify-center shrink-0">
-                    <Clock size={24} />
+                <div className="flex items-start gap-4 p-5 bg-white shadow-sm border border-gray-100">
+                  <div className="w-10 h-10 bg-red-50 text-secondary flex items-center justify-center shrink-0">
+                    <Clock size={20} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Giờ Làm Việc</h3>
-                    <p className="text-gray-600">Thứ 2 - Chủ Nhật: Phục vụ 24/24</p>
+                    <h3 className="font-bold text-lg mb-1">Khu vực hoạt động</h3>
+                    <p className="text-gray-600">Thành phố Hồ Chí Minh và các tỉnh lân cận</p>
                   </div>
                 </div>
               </div>
@@ -86,8 +90,8 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100">
-              <h2 className="text-2xl font-bold mb-6 text-primary">Gửi Yêu Cầu Báo Giá</h2>
-              <p className="text-gray-600 mb-8">Vui lòng để lại thông tin công trình, chúng tôi sẽ liên hệ lại trong vòng 15 phút để khảo sát và báo giá.</p>
+              <h2 className="text-2xl font-bold mb-6 text-primary">Gửi Yêu Cầu Tư Vấn</h2>
+              <p className="text-gray-600 mb-8">Vui lòng để lại thông tin công trình, chúng tôi sẽ liên hệ lại trong vòng 15 phút để khảo sát thực tế.</p>
               
               {isSuccess && (
                 <div className="mb-6 p-4 bg-green-50 text-green-700 rounded-lg border border-green-200 flex items-center gap-2">
@@ -142,9 +146,9 @@ export default function Contact() {
       </section>
 
       {/* Map Full Width */}
-      <div className="h-96 w-full relative">
+      <div className="h-96 w-full relative bg-gray-200">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.273573752175!2d106.63391941533418!3d10.790351792311684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eb9d9b68a8b%3A0xc3b8a1c97a220556!2sT%C3%A2n%20Ph%C3%BA%2C%20Ho%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1628135876356!5m2!1sen!2s" 
+          src="https://www.google.com/maps?q=VM99%2BXR+Th%E1%BB%9Bi+An,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam&output=embed" 
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 

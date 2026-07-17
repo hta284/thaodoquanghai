@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock, HardHat, Facebook, Send, Building2 } from 'lucide-react';
+import { Phone, Mail, Facebook, Building2 } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -10,10 +10,13 @@ export function Footer() {
           {/* Col 1 */}
           <div className="space-y-6">
             <div className="flex flex-col gap-2">
+              <img src="/logo.png" alt="Quang Hải Logo" className="h-20 w-auto object-contain" onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }} />
               <h3 className="text-3xl font-black text-secondary tracking-wider leading-none uppercase">
                 QUANG HẢI
               </h3>
-              <p className="text-xs font-bold text-gray-500 uppercase">
+              <p className="text-xs font-bold text-gray-500 uppercase mt-2">
                 Uy tín – Thân thiện – Chuyên Nghiệp
               </p>
             </div>
@@ -30,18 +33,12 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-gray-400 shrink-0" size={16} />
-                <a href="mailto:quanghai@gmail.com" className="hover:text-secondary transition-colors">Email: quanghai@gmail.com</a>
+                <a href="mailto:thaodoquanghai@gmail.com" className="hover:text-secondary transition-colors">Email: thaodoquanghai@gmail.com</a>
               </li>
             </ul>
             <div className="flex gap-2">
-              <a href="#" className="w-8 h-8 rounded flex items-center justify-center bg-[#3b5998] text-white hover:opacity-90 transition-opacity">
+              <a href="https://www.facebook.com/thaodoquanghai" target="_blank" rel="noreferrer" className="w-8 h-8 rounded flex items-center justify-center bg-[#3b5998] text-white hover:opacity-90 transition-opacity">
                 <Facebook size={16} />
-              </a>
-              <a href="#" className="w-8 h-8 rounded flex items-center justify-center bg-gray-800 text-white hover:opacity-90 transition-opacity">
-                <span className="font-bold text-xs">t</span>
-              </a>
-              <a href="#" className="w-8 h-8 rounded flex items-center justify-center bg-[#cd201f] text-white hover:opacity-90 transition-opacity">
-                <span className="font-bold text-xs">▶</span>
               </a>
             </div>
           </div>
@@ -55,19 +52,21 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Building2 className="text-gray-400 shrink-0 mt-1" size={16} />
                 <div>
-                  <span className="font-bold text-primary">Văn Phòng:</span> 100/3/14 Lê Thị Hà, Hóc Môn, HCM.
+                  <span className="font-bold text-primary">CÔNG TY QUANG HẢI</span><br/>
+                  Người đại diện: Nguyễn Văn Hải<br/>
+                  Mã số thuế: 0318264614
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Building2 className="text-gray-400 shrink-0 mt-1" size={16} />
                 <div>
-                  <span className="font-bold text-primary">Kho:</span> 35A Lê Văn Khương, Hóc Môn, HCM
+                  <span className="font-bold text-primary">Địa chỉ:</span> 109/5/13 Đ. Thạnh Xuân 22, Thới An, Hồ Chí Minh 70000, Việt Nam
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Building2 className="text-gray-400 shrink-0 mt-1" size={16} />
                 <div>
-                  <span className="font-bold text-primary">Cửa hàng:</span> 343 Đ. Tô Hiến Thành, Phường 12, Quận 10, Hồ Chí Minh, Vietnam
+                  <span className="font-bold text-primary">Khu vực hoạt động:</span> TP.HCM và các tỉnh lân cận
                 </div>
               </li>
             </ul>
@@ -99,7 +98,7 @@ export function Footer() {
           <div>
             <div className="w-full h-48 bg-gray-200 rounded overflow-hidden">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.420594896589!2d106.62768007469837!3d10.855574389297652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a1a8c9b2e53%3A0x6c6e7f1a3b8d4e4!2zQ8O0bmcgVHkgQuG6o28gVsG7hyBRdWFuZyBI4bqjaQ!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" 
+                src="https://www.google.com/maps?q=VM99%2BXR+Th%E1%BB%9Bi+An,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam&output=embed" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

@@ -22,7 +22,7 @@ export function FloatingButtons() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       {/* Zalo Button */}
       <a
-        href="https://zalo.me/0972833227"
+        href="https://zalo.me/0985023531"
         target="_blank"
         rel="noreferrer"
         className="w-12 h-12 md:w-14 md:h-14 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition-all hover:scale-110 hover:-translate-y-1 group relative"

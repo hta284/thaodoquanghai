@@ -10,12 +10,12 @@ const CATEGORIES = [
 ];
 
 const PROJECTS = [
-  { id: 1, category: 'thao-do', title: 'Tháo dỡ nhà 3 tầng Quận 1', img: 'https://images.unsplash.com/photo-1518182170546-076616fdfaaf?auto=format&fit=crop&q=80&w=800' },
-  { id: 2, category: 'san-lap', title: 'San lấp mặt bằng dự án Nhà Bè', img: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800' },
-  { id: 3, category: 'dao-mong', title: 'Đào móng biệt thự Quận 7', img: 'https://images.unsplash.com/photo-1574320297050-62136e053fa8?auto=format&fit=crop&q=80&w=800' },
-  { id: 4, category: 'thao-do', title: 'Phá dỡ công xưởng Bình Tân', img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800' },
-  { id: 5, category: 'san-lap', title: 'Bơm cát san lấp Quận 2', img: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800' },
-  { id: 6, category: 'dao-mong', title: 'Đào hầm giữ xe Thủ Đức', img: 'https://images.unsplash.com/photo-1541888081622-19e525656157?auto=format&fit=crop&q=80&w=800' },
+  { id: 1, category: 'thao-do', title: 'Tháo dỡ nhà 3 tầng Quận 1', img: '/du-an-1.jpg' },
+  { id: 2, category: 'san-lap', title: 'San lấp mặt bằng dự án Nhà Bè', img: '/du-an-2.jpg' },
+  { id: 3, category: 'dao-mong', title: 'Đào móng biệt thự Quận 7', img: '/du-an-3.jpg' },
+  { id: 4, category: 'thao-do', title: 'Phá dỡ công xưởng Bình Tân', img: '/du-an-4.jpg' },
+  { id: 5, category: 'san-lap', title: 'Bơm cát san lấp Quận 2', img: '/du-an-5.jpg' },
+  { id: 6, category: 'dao-mong', title: 'Đào hầm giữ xe Thủ Đức', img: '/du-an-6.jpg' },
 ];
 
 export default function Projects() {

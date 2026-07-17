@@ -11,7 +11,7 @@ export function SEO({
   title = 'CÔNG TY QUANG HẢI | Thi Công Tháo Dỡ, San Lấp Mặt Bằng', 
   description = 'Công ty Quang Hải chuyên thi công tháo dỡ nhà, đào móng, đóng cừ, ép cừ, san lấp mặt bằng, đục nền bê tông uy tín chuyên nghiệp tại TP.HCM.',
   url = 'https://quanghai.vn',
-  image = 'https://images.unsplash.com/photo-1541888081622-19e525656157?auto=format&fit=crop&q=80&w=1200'
+  image = '/thao-do-nha.jpg'
 }: SEOProps) {
   const siteTitle = title.includes('QUANG HẢI') ? title : `${title} | QUANG HẢI`;
   

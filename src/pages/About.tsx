@@ -27,7 +27,7 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1541888081622-19e525656157?auto=format&fit=crop&q=80&w=1200" 
+                src="/thao-do-nha.jpg" 
                 alt="Công ty Quang Hải" 
                 className="rounded-xl shadow-2xl"
               />
@@ -48,7 +48,7 @@ export default function About() {
                 {[
                   "Phục vụ toàn khu vực TP.HCM và lân cận",
                   "Máy móc hiện đại, thi công an toàn",
-                  "Báo giá minh bạch, cạnh tranh",
+                  "Chi phí minh bạch, hợp lý",
                   "Hỗ trợ khảo sát tận nơi miễn phí 24/7"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-gray-700 font-medium">
