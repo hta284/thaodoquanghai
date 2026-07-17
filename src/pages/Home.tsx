@@ -29,39 +29,41 @@ export default function Home() {
       
       {/* 1. HERO BANNER */}
       <section className="relative pt-[88px] bg-gray-50">
-        <div className="w-full relative h-[600px] flex items-center justify-center overflow-hidden">
-          {/* Background Image with Dark Overlay */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url("/banner.jpg")' }}
-          >
-            <div className="absolute inset-0 bg-black/60"></div>
-          </div>
-
-          <div className="container mx-auto px-4 relative z-10 text-center text-white mt-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+        <div className="w-full relative h-[300px] sm:h-[400px] md:h-[600px] overflow-x-auto overflow-y-hidden flex items-center">
+          <div className="h-full min-w-[1000px] md:min-w-full relative shrink-0 grow w-full">
+            {/* Background Image with Dark Overlay */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: 'url("/banner.jpg")' }}
             >
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 tracking-wide drop-shadow-lg uppercase">
-                quanghai.com <sup className="text-2xl md:text-4xl">&reg;</sup>
-              </h1>
-              <p className="text-lg md:text-xl mb-12 max-w-4xl mx-auto leading-relaxed text-gray-200">
-                Am hiểu các hệ thống của tòa nhà, các công trình xây dựng giúp chúng tôi có khả năng tách rời giữa hệ thống cần tháo và hệ thống vẫn đang hoạt động.
-              </p>
-            </motion.div>
+              <div className="absolute inset-0 bg-black/60"></div>
+            </div>
+
+            <div className="absolute inset-0 flex items-center justify-center container mx-auto px-4 z-10 text-center text-white">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 tracking-wide drop-shadow-lg uppercase">
+                  quanghai.com <sup className="text-2xl md:text-4xl">&reg;</sup>
+                </h1>
+                <p className="text-lg md:text-xl mb-12 max-w-4xl mx-auto leading-relaxed text-gray-200">
+                  Am hiểu các hệ thống của tòa nhà, các công trình xây dựng giúp chúng tôi có khả năng tách rời giữa hệ thống cần tháo và hệ thống vẫn đang hoạt động.
+                </p>
+              </motion.div>
+            </div>
+            
+            {/* Attempt to load custom banner on top if uploaded, otherwise hide */}
+            <img 
+              src="/banner.jpg" 
+              alt="Công Ty Quang Hải Banner" 
+              className="absolute inset-0 w-full h-full object-cover z-20 pointer-events-none"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
           </div>
-          
-          {/* Attempt to load custom banner on top if uploaded, otherwise hide */}
-          <img 
-            src="/banner.jpg" 
-            alt="Công Ty Quang Hải Banner" 
-            className="absolute inset-0 w-full h-full object-cover z-20"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-            }}
-          />
         </div>
       </section>
 
@@ -128,7 +130,7 @@ export default function Home() {
               { title: "Tháo dỡ nhà", desc: "Tháo dỡ nhà cấp 4, cao tầng, biệt thự, nhà xưởng an toàn.", img: "/thao-do-nha.jpg", isMain: true },
               { title: "Đào móng - Đóng cừ", desc: "Thi công đào móng sâu, đóng cừ chuyên nghiệp cho mọi địa hình.", img: "/dao-mong-dong-cu.jpg" },
               { title: "San lấp mặt bằng", desc: "San lấp chuẩn cao độ, lu lèn chặt chẽ cho dự án.", img: "/san-lap-mat-bang.jpg" },
-              { title: "Đục phá nền, đổ bê tông", desc: "Cắt đục bê tông, khoan rút lõi, đổ bê tông nền.", img: "/duc-pha-nen.jpg" },
+              { title: "Đục phá nền, đổ bê tông", desc: "Cắt đục bê tông, khoan rút lõi, nhận đổ bê tông, xoa bóng cắt rong.", img: "/duc-pha-nen.jpg" },
               { title: "Chở xà bần", desc: "Vận chuyển xà bần, phế thải xây dựng nhanh chóng.", img: "/cho-xa-ban.jpg" },
               { title: "Ép cừ", desc: "Ép cừ larsen, cừ tràm đảm bảo độ vững chắc cho công trình.", img: "/ep-cu.jpg" },
               { title: "Thu mua nhà cũ", desc: "Thu mua xác nhà, phế liệu công trình với giá cao.", img: "/thu-mua-nha-cu.jpg" },

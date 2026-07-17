@@ -39,10 +39,10 @@ const SERVICES = [
   { 
     id: 'duc-nen-be-tong',
     title: "Đục phá bê tông", 
-    desc: "Khoan cắt, đục phá bê tông nền, tường, cột bằng máy móc hiện đại, ít tiếng ồn.", 
+    desc: "Khoan cắt, đục phá bê tông nền, tường, cột bằng máy móc hiện đại, ít tiếng ồn. Nhận đổ bê tông, xoa bóng cắt rong.", 
     img: "/duc-pha-nen.jpg", 
     icon: HardHat,
-    features: ["Máy đục hơi, đục điện công suất lớn", "Khoan rút lõi bê tông", "Cắt rãnh, cắt sàn bê tông"]
+    features: ["Máy đục hơi, đục điện công suất lớn", "Khoan rút lõi bê tông", "Nhận đổ bê tông, xoa bóng cắt rong"]
   },
   { 
     id: 'cho-xa-ban',
