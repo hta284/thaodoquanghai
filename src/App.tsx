@@ -11,7 +11,10 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
 import News from './pages/News';
+import NewsDetail from './pages/NewsDetail';
 import Contact from './pages/Contact';
+
+import Pricing from './pages/Pricing';
 
 export default function App() {
   return (
@@ -23,6 +26,8 @@ export default function App() {
           <Route path="dich-vu" element={<Services />} />
           <Route path="du-an" element={<Projects />} />
           <Route path="tin-tuc" element={<News />} />
+          <Route path="tin-tuc/:slug" element={<NewsDetail />} />
+          <Route path="bang-gia" element={<Pricing />} />
           <Route path="lien-he" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Route>

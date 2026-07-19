@@ -7,13 +7,14 @@ const CATEGORIES = [
   { id: 'thao-do', name: 'Tháo dỡ nhà' },
   { id: 'san-lap', name: 'San lấp' },
   { id: 'dao-mong', name: 'Đào móng' },
+  { id: 'do-be-tong', name: 'Đổ bê tông' },
 ];
 
 const PROJECTS = [
-  { id: 1, category: 'thao-do', title: 'Tháo dỡ nhà 3 tầng Quận 1', img: '/du-an-1.jpg' },
-  { id: 2, category: 'san-lap', title: 'San lấp mặt bằng dự án Nhà Bè', img: '/du-an-2.jpg' },
-  { id: 3, category: 'dao-mong', title: 'Đào móng biệt thự Quận 7', img: '/du-an-3.jpg' },
-  { id: 4, category: 'thao-do', title: 'Phá dỡ công xưởng Bình Tân', img: '/du-an-4.jpg' },
+  { id: 1, category: 'do-be-tong', title: 'Đổ nền bê tông tại Thích Quảng Đức, Phú Nhuận', img: '/du-an-1.jpg' },
+  { id: 2, category: 'thao-do', title: 'Tháo dỡ nhà Tân Bình', img: '/du-an-2.jpg' },
+  { id: 3, category: 'san-lap', title: 'San lấp mặt bằng tại Bình Chánh', img: '/du-an-3.jpg' },
+  { id: 4, category: 'thao-do', title: 'Tháo dỡ nhà tại Quang Trung Gò Vấp', img: '/du-an-4.jpg' },
   { id: 5, category: 'san-lap', title: 'Bơm cát san lấp Quận 2', img: '/du-an-5.jpg' },
   { id: 6, category: 'dao-mong', title: 'Đào hầm giữ xe Thủ Đức', img: '/du-an-6.jpg' },
 ];

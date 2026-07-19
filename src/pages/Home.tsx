@@ -134,7 +134,6 @@ export default function Home() {
               { title: "Chở xà bần", desc: "Vận chuyển xà bần, phế thải xây dựng nhanh chóng.", img: "/cho-xa-ban.jpg" },
               { title: "Ép cừ", desc: "Ép cừ larsen, cừ tràm đảm bảo độ vững chắc cho công trình.", img: "/ep-cu.jpg" },
               { title: "Thu mua nhà cũ", desc: "Thu mua xác nhà, phế liệu công trình với giá cao.", img: "/thu-mua-nha-cu.jpg" },
-              { title: "Uy tín - An toàn", desc: "Bảo hiểm công trình, quy trình an toàn lao động tuyệt đối.", img: "/uy-tin-an-toan.jpg" },
             ].map((service, idx) => (
               <motion.div key={idx} variants={fadeIn} className="bg-white group cursor-pointer border border-gray-100 hover:border-secondary transition-all hover:shadow-xl relative overflow-hidden">
                 {service.isMain && (
@@ -217,21 +216,24 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {[1, 2].map((i) => (
+            {[
+              { id: 1, title: 'Đổ nền bê tông tại Thích Quảng Đức, Phú Nhuận', desc: 'Thi công đổ bê tông nền nguyên khối, kết hợp xoa nền đánh bóng và cắt ron chống nứt chuyên nghiệp. Cam kết mặt sàn phẳng mịn, độ bền cao, đáp ứng tiêu chuẩn chịu lực khắt khe nhất.', img: '/du-an-1.jpg' },
+              { id: 2, title: 'San lấp mặt bằng Quận 7', desc: 'San lấp mặt bằng dự án lớn, đảm bảo tiến độ và kỹ thuật lu lèn nền đất.', img: '/du-an-2.jpg' },
+            ].map((project) => (
               <motion.div 
-                key={i}
+                key={project.id}
                 whileHover={{ y: -5 }}
                 className="group cursor-pointer bg-primary-dark"
               >
                 <div className="h-80 overflow-hidden relative">
-                  <img src={`/du-an-${i}.jpg`} alt="Dự án" className="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-100" />
+                  <img src={project.img} alt={project.title} className="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-100" />
                   <div className="absolute top-4 left-4 bg-secondary text-white px-4 py-1 text-sm font-bold uppercase tracking-wider">
                     Hoàn Thành
                   </div>
                 </div>
                 <div className="p-8 border-t-4 border-transparent group-hover:border-secondary transition-colors">
-                  <h3 className="text-2xl font-bold text-white mb-3">Tháo dỡ nhà cao tầng Quận {i * 3}</h3>
-                  <p className="text-gray-400 mb-4 line-clamp-2">Thi công tháo dỡ công trình phức tạp, đảm bảo an toàn tuyệt đối cho các công trình lân cận.</p>
+                  <h3 className="text-2xl font-bold text-white mb-3">{project.title}</h3>
+                  <p className="text-gray-400 mb-4 line-clamp-2">{project.desc}</p>
                   <span className="text-secondary font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
                     Xem chi tiết <ArrowRight size={16} />
                   </span>

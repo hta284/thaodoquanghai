@@ -1,5 +1,6 @@
 import { SEO } from '../components/SEO';
 import { Calendar, User, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const NEWS = [
   {
@@ -8,7 +9,8 @@ const NEWS = [
     excerpt: 'Tháo dỡ nhà cũ là công đoạn đầu tiên và vô cùng quan trọng trước khi xây dựng công trình mới. Bài viết này sẽ chia sẻ những kinh nghiệm thực tế...',
     img: '/tin-tuc-1.jpg',
     date: '15/10/2023',
-    author: 'Quản trị viên'
+    author: 'Quản trị viên',
+    link: '/tin-tuc/kinh-nghiem-thao-do-nha-cu'
   },
   {
     id: 2,
@@ -16,15 +18,17 @@ const NEWS = [
     excerpt: 'Làm sao để chọn được đơn vị san lấp mặt bằng uy tín, chất lượng đất cát đảm bảo và giá cả hợp lý? Hãy cùng tìm hiểu qua bài viết dưới đây...',
     img: '/tin-tuc-2.jpg',
     date: '02/11/2023',
-    author: 'Quản trị viên'
+    author: 'Quản trị viên',
+    link: '/tin-tuc/luu-y-san-lap-mat-bang'
   },
   {
     id: 3,
     title: 'Chi phí đục phá bê tông mới nhất năm nay',
     excerpt: 'Cập nhật bảng chi phí dịch vụ khoan cắt, đục phá bê tông tham khảo cho từng hạng mục công trình. Cam kết không phát sinh...',
-    img: '/tin-tuc-3.jpg',
+    img: '/duc-pha-nen.jpg',
     date: '20/11/2023',
-    author: 'Quản trị viên'
+    author: 'Quản trị viên',
+    link: '/bang-gia'
   }
 ];
 
@@ -61,14 +65,14 @@ export default function News() {
                       <span className="flex items-center gap-1"><User size={14}/> {item.author}</span>
                     </div>
                     <h2 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-secondary transition-colors line-clamp-2">
-                      <a href="#">{item.title}</a>
+                      <Link to={item.link}>{item.title}</Link>
                     </h2>
                     <p className="text-gray-600 mb-4 line-clamp-3">
                       {item.excerpt}
                     </p>
-                    <a href="#" className="inline-flex items-center gap-2 text-primary font-bold hover:text-secondary mt-auto transition-colors">
+                    <Link to={item.link} className="inline-flex items-center gap-2 text-primary font-bold hover:text-secondary mt-auto transition-colors">
                       Đọc tiếp <ArrowRight size={16} />
-                    </a>
+                    </Link>
                   </div>
                 </article>
               ))}

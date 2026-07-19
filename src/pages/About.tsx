@@ -8,10 +8,11 @@ export default function About() {
       <SEO title="Giới Thiệu" />
       
       {/* Banner */}
-      <section className="bg-primary pt-16 pb-20 text-center text-white">
-        <div className="container mx-auto px-4">
+      <section className="bg-primary pt-16 pb-20 text-center text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: 'url("/thao-do-nha.jpg")' }}></div>
+        <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-black mb-4">VỀ CHÚNG TÔI</h1>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-200 max-w-2xl mx-auto text-lg">
             Công ty Quang Hải - Đơn vị tiên phong trong lĩnh vực phá dỡ, san lấp và chuẩn bị mặt bằng tại TP.HCM.
           </p>
         </div>

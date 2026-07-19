@@ -98,7 +98,7 @@ export function Footer() {
           <div>
             <div className="w-full h-48 bg-gray-200 rounded overflow-hidden">
               <iframe 
-                src="https://www.google.com/maps?q=VM99%2BXR+Th%E1%BB%9Bi+An,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam&output=embed" 
+                src="https://www.google.com/maps?q=10.8699615,106.6696128&output=embed" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
